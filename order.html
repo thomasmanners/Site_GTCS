@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Solent Pizzas_Order</title>
+  
+      <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+<html>
+<div class="wrapper"> 
+  <head>
+	<title> Pizza Parlour Page - Contact</title>
+	<meta charset="UTF-8">
+	  <link type="text/css" rel="stylesheet" href="main.css">
+    <link rel="icon" href="/media/favicon.png"> <!-- Linking the favicon icon to the page -->
+    <script  type="text/javascript"  src="js/script.js"> 
+    </script> <!-- Linking the JS page to this one -->
+</head>
+
+<body onload="clock()" > <!-- This piece of code on the left, describes how a function within the JS file will be read when this page is loaded -->
+      <div class="navContainer"> <!-- The navigation bar, with all its link below in an unordered list, with source links to other page -->
+  		<ul>
+            <li><a><img src="http://i.imgur.com/KOnrgqA.jpg?2"><a></li>
+            <li><a href="index.html">HOME</a></li>
+			<li><a href="order.html">MENU</a></li>
+    	    <li><a href="#">LOCATIONS</a></li>
+    	    <li><a href="contact.html">CONTACT</a></li>
+		</ul>
+    </div>
+	
+ <div class="buffer_contact"> </div> <!-- These following divs grant the base formatting for the site, on this page though, it provides the necessary containers for each of the javascript elements   -->
+  <div class="mainContainer_contact"> 
+    <div class="submainContainer_Order"> </div>
+      <div class="h1_Contact"> Customise your pizza! </div>
+       <div class="submainContainerLeft_Order"> 
+         <div class="headingBar1_Order"> <div class="h2_contact"> Create your order.. </div>
+          
+          <form id="order">
+            
+        <div class="infobox_order1">Choose your Pizza base size! (One option must be chosen)
+          <div class="infobox_order1format">
+            <p>Small - £5.00<input type="radio" data-price="5.00" data-human-desc="Pizza"  name="pizzabase" value="small"></p><p id="baseRequiredError" style="display: none" onchange="validateForm(validation)"> Please make a selection </p>
+            <p>Medium - £8.00<input type="radio" data-price="8.00"  name="pizzabase" value="medium"></p> <p id="fullnameRequiredError" style="display: none" onchange="validateForm(validation)"> Please make a selection </p>
+            
+            <p>Large - £10.00<input type="radio" data-price="10.00"  name="pizzabase" value="large"></p> <p id="fullnameRequiredError" style="display: none" onchange="validateForm(validation)"> Please make a selection </p>
+          </div>
+        </div>
+            <div class="infobox_order1">Select the toppings you desire! (At least one option must be chosen)
+          <div class="infobox_order1format">
+            
+            <p>Cheese - £0.50<input type="checkbox" data-price="0.50"  name="topping" value="cheeseoption"></p> <p id="fullnameRequiredError" style="display: none" onchange="formChanged(event)"> Please make a selection </p>
+            
+            <p>Ham - £0.50<input type="checkbox" data-price="0.50" name="topping" value="hamoption"></p> <p id="fullnameRequiredError" style="display: none" onchange="formChanged(event)"> Please make a selection </p>
+            
+            <p>Mushrooms - £0.40<input type="checkbox" data-price="0.40" name="topping" value="mushroomoption"></p> <p id="fullnameRequiredError" style="display: none" onchange="formChanged(event)"> Please make a selection </p>
+            
+         <div class="infobox_order2format">
+            <p>Spinach - £0.80<input type="checkbox" data-price="0.80" name="topping" value="spinachoption"></p> <p id="fullnameRequiredError" style="display: none" onchange="validateForm(validation)"> Please make a selection </p>
+           
+           <p>Chicken - £1.10<input type="checkbox" data-price="1.10" name="topping" value="chickenoption"></p> <p id="fullnameRequiredError" style="display: none" onchange="formChanged(event)"> Please make a selection </p>
+           
+           <p>Anchovies - £0.60<input type="checkbox" data-price="0.60" name="topping" value="anchovyoption"></p> <p id="fullnameRequiredError" style="display: none" onchange="formChanged(event)"> Please make a selection </p>
+            </div>
+          </div>
+        </div> 
+            
+            <div class="infobox_order1">Delivery and contact information <p id="choices"> </p>
+            <p id="price"> </p><p>Address input - <input type="textbox"  name="delivery" placeholder="Enter your address.."></p><p>Post code input - <input type="textbox"  name="postcode" placeholder="Enter your post code.."></p><p>Phone number input - <input type="textbox"  name="phonenum" placeholder="Enter your phone number.."></p></div>
+
+        </div> <!-- headingBar1_Order end of div -->
+          <div class="infobox_order3"><input type="submit" value="Submit order" onclick="ordervalidation()"></div>
+                <!-- Button to submit order once the user is done -->
+         
+         <div class="infobox_order4"><input type="submit" value="Reset order" onclick="return formChanged(event)"></div>
+              </form> <!-- Button to reset order, if the user changes their mind -->
+        
+       <div class="submainContainerRight_Order">
+         <div class="headingBar1_Contact"> <div class="h2_contact"> Order Summary </div>
+           <div class="infobox_contact4"> Below is an accurate representation of the price of the current order including delivery costs.
+           </div>
+           <div class="infobox_order5"> TOTAL : </div>
+         </div>
+        </div>
+    </div>
+         <div class="bufferOrder1"> </div> <!-- This buffer is used to separate the containers visually for any users -->
+          
+    </div>
+	
+         <div class="socialbar_contact"> <div class="h3"> Connect with us </div> <!-- The following is the social bar, displayed on each page of the site, it allows users to easily be routed back to Solent Pizzas social circle, creating the need for more social media exposure. -->
+         <div class="socialbaricon1"><div class="socialbaricon1img1"><a><img src="http://tny.im/8ND"> </a></div></div>
+           <div class="socialbaricon2"><div class="socialbaricon2img2"><a><img src="http://tny.im/8NG"> </a></div></div>
+           <div class="socialbaricon3"><div class="socialbaricon3img3"><a><img src="http://tny.im/8NH"> </a></div></div>
+            <div class="socialbaricon4"><div class="socialbaricon4img4"><a><img src="http://tny.im/8NI"> </a></div></div>
+           </div>
+          <div class="footer_contact"> <div class="footerheadertext"> Other useful info </div> <!-- The footer navigation bar, allows users to reach specific elements of the site, almost as if it were the index of a book, but for the site. -->
+          <div class="footerNav"> 
+              <ul>
+                <div class="footercontainerleft">
+                <li><div class="h4"> - Menu -</div></li>
+                <li><a href="#">  Starters</a></li>
+                <li><a href="#">  Pizza</a></li>
+                <li><a href="#">  Side orders</a></li>
+                <li><a href="#">  Desserts</a></li>
+                </div>
+            </ul>
+            <ul>
+              <div class="footerbuffer1_contact"> </div>
+                <div class="footercontainermiddle1"> 
+                <li><div class="h4"> - About us - </div></li>
+                <li><a href="#"> Careers</a></li>
+                <li><a href="#"> Locations</a></li>
+                <li><a href="#"> Policies</a></li>
+              </div>
+             </ul>
+             <ul>
+               <div class="footercontainermiddle2_contact"> 
+                 <li><div class="h4"> - Site Map - </div></li>
+                 <li><a href="#"> Homepage</a></li>
+                 <li><a href="#"> Our menu</a></li>
+                 <li><a href="#"> Our locations</a></li>
+                 <li><a href="#"> Contact us</a></li>
+               </div>
+                </ul>
+  <div class="footerbuffer2"> </div>
+               <div class="footerdisclaimer"> When entering <i>Solent Pizzas</i> website, you are obliging to our <u>terms and conditions </u> as well as our <u>privacy policy</u>. All rights reserved. United Kingdom - Thomas Manners. <div class="footerclockleft"><p id="date"></p></div><div class="footerclockright"><p id="clock"></p></div></div>
+            </div>
+         </div>
+      </div>
+    </div>
+  </div>
+</body>
+</div>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Solent Pizzas_Contact</title>
+  
+      <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="wrapper"> 
+<head>
+	<title> Pizza Parlour Page - Contact</title>
+	<meta charset="UTF-8">
+	  <link type="text/css" rel="stylesheet" href="main.css">
+    <link rel="icon" href="/media/favicon.png"> <!-- Linking the favicon icon to the page -->
+    <script  type="text/javascript"  src="js/script.js"> 
+
+    </script> <!-- Linking the JS page to this one -->
+</head>
+
+<body onload="clock(),initvalidation()"><!-- This piece of code on the left, describes how a function within the JS file will be read when this page is loaded, both initialising the validation function and the clock function are implemented -->
+      <div class="navContainer">
+  		 <ul>
+             <li><a><img src="http://i.imgur.com/KOnrgqA.jpg?2"><a></li>
+             <li><a href="index.html">HOME</a></li>
+     		 <li><a href="order.html">MENU</a></li>
+    	     <li><a href="#">LOCATIONS</a></li>
+    	     <li><a href="contact.html">CONTACT</a></li>
+ 	 	 </ul>
+    </div>
+ <div class="buffer_contact"> </div>
+  <div class="mainContainer_contact"> 
+    <div class="submainContainer_Contact"> </div>
+       <div class="h1_Contact"> Hungry for more? </div>
+      <div class="submainContainerLeft_Contact"> 
+        <div class="headingBar1_Contact"> <div class="h2_contact"> Talk to us below.. </div>
+          
+          <form id="contact">
+         <div class="imgicon_contact"><a href="#"><img src="http://i.imgur.com/GbWCf83.png" title="Call us today!" /></a> </div>
+      <div class="infobox_contact1"> Phone us to make a quick and easy order with our automated phone service - 023 8023 8023 </div>
+        <div class="infobox_contact2"><p><input type="text"  name="contactname" placeholder="Your full name..*"></p> <p id="fullnameRequiredError" style="display: none" onchange="validateForm(validation)"> Please fill in all the required elements </p> </div>
+          <div class="infobox_contact2"><p><input type="text"  name="contactemail" placeholder="Your email address..*"></p>
+            <p id="emailRequiredError" style="display: none" onchange="validateForm(validation)">  Please fill in all the required elements </p><p id="emailinputRequiredError" style="display: none" onchange="validateForm(validation)">  Please fill in all the required elements </p> </div>
+            <div class="infobox_contact2"><p><input type="text"  name="contactphone" placeholder="Your phone number.."></p></div>
+            <div class="infobox_contact3"><p><textarea name="message" rows="5" cols="25" placeholder="Enter your message here..*"></textarea></p><p id="commentRequiredError" style="display: none" onchange="validateForm(validation)"> Please fill in all the required elements</p></div>
+              </div>
+          <div class="infobox_contact5"><input type="submit" value="Submit" onclick="return validateForm(validation)"></div>
+              </form>
+        
+       <div class="submainContainerRight_Contact">
+         <div class="headingBar1_Contact"> <div class="h2_contact"> ..Or come meet us! </div>
+           <div class="infobox_contact4"> If you have any other questions about our company, or what we do, please don't hesitate to visit us in store to give face to face feedback or express your opinion on our business.  </div>
+           <div class="Contact_map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40311.44743979726!2d-1.1320786208984235!3d50.84106430000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487442b32eed3ce3%3A0xe348c58c07f5a9d7!2sPizza+Express!5e0!3m2!1sen!2suk!4v1494688478899" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+           </div>
+         </div>
+        </div>
+    </div>
+         <div class="bufferContact1"> </div>
+          
+    </div>
+         <div class="socialbar_contact"> <div class="h3"> Connect with us </div><!-- The following is the social bar, displayed on each page of the site, it allows users to easily be routed back to Solent Pizzas social circle, creating the need for more social media exposure. -->
+         <div class="socialbaricon1"><div class="socialbaricon1img1"><a><img src="http://tny.im/8ND"> </a></div></div>
+           <div class="socialbaricon2"><div class="socialbaricon2img2"><a><img src="http://tny.im/8NG"> </a></div></div>
+           <div class="socialbaricon3"><div class="socialbaricon3img3"><a><img src="http://tny.im/8NH"> </a></div></div>
+            <div class="socialbaricon4"><div class="socialbaricon4img4"><a><img src="http://tny.im/8NI"> </a></div></div>
+           </div>
+          <div class="footer_contact"> <div class="footerheadertext"> Other useful info </div>
+          <div class="footerNav"> <!-- The footer navigation bar, allows users to reach specific elements of the site, almost as if it were the index of a book, but for the site. -->
+              <ul>
+                <div class="footercontainerleft">
+                <li><div class="h4"> - Menu -</div></li>
+                <li><a href="#">  Starters</a></li>
+                <li><a href="#">  Pizza</a></li>
+                <li><a href="#">  Side orders</a></li>
+                <li><a href="#">  Desserts</a></li>
+                </div>
+            </ul>
+            <ul>
+              <div class="footerbuffer1_contact"> </div>
+                <div class="footercontainermiddle1"> 
+                <li><div class="h4"> - About us - </div></li>
+                <li><a href="#"> Careers</a></li>
+                <li><a href="#"> Locations</a></li>
+                <li><a href="#"> Policies</a></li>
+              </div>
+             </ul>
+             <ul>
+               <div class="footercontainermiddle2_contact"> 
+                 <li><div class="h4"> - Site Map - </div></li>
+                 <li><a href="#"> Homepage</a></li>
+                 <li><a href="#"> Our menu</a></li>
+                 <li><a href="#"> Our locations</a></li>
+                 <li><a href="#"> Contact us</a></li>
+               </div>
+                </ul>
+ <div class="footerbuffer2"> </div>
+               <div class="footerdisclaimer"> When entering <i>Solent Pizzas</i> website, you are obliging to our <u>terms and conditions </u> as well as our <u>privacy policy</u>. All rights reserved. United Kingdom - Thomas Manners. <div class="footerclockleft"><p id="date"></p></div><div class="footerclockright"><p id="clock"></p></div></div>
+               </div>
+            </div>
+         </div>
+      </div>
+    </div>
+  </div>
+</body>
+</div>
+</html>
